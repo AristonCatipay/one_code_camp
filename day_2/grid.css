@@ -1,0 +1,10 @@
+.container{
+    display: grid; /* This is the first step */
+    grid-template-columns: repeat(3, auto); /* First Argument is the number of columns, Second Argument is the size of each column */
+    grid-template-rows: repeat(2, auto); /* First Argument is the number of rows, Second Argument is the size of each row */
+    gap: 10px; /* This will add gap to all of the sizes of each element, it works like a margin */
+}
+.gridItem{
+    background-color: gray;
+    padding: 10px;
+}

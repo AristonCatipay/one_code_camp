@@ -1,0 +1,166 @@
+/* Mobile */
+@media screen and (max-width: 480px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        }
+        #logo{
+            min-height: 130px;
+            width: auto;
+            background-color: #B97A57;
+        }
+        #wrapper{
+            min-height: 130px;
+            width: auto;
+            background-color: #FFD9B7;
+            /* Added */
+            display: grid; /* This is the first step */
+            grid-template-columns: repeat(1, auto); /* First Argument is the number of columns, Second Argument is the size of each column */
+            grid-template-rows: repeat(6, auto); /* First Argument is the number of rows, Second Argument is the size of each row */
+            gap: 1px; /* This will add gap to all of the sizes of each element, it works like a margin */
+        }
+        #navigation{
+            min-height: 130px;
+            background-color: #FF7F27;
+        }
+        #main_content{
+            min-height: 250px;
+            width: auto;
+            background-color: #880015;
+        }
+        #about{
+            min-height: 250px;
+            width: auto;
+            background-color: #FFAEC9;
+            /* Added */
+            margin: 30px;
+            position: relative;
+        }
+        .sponsors{
+            min-height: 65px;
+            background-color: #FFFF88;
+            /* Added */
+            margin-top: 5px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+}
+
+/* Tablet */
+@media screen and (min-width: 481px ) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        }
+        #wrapper{
+        width: 940px;
+        background-color: #FFD9B7;
+        margin: 0px auto;
+        padding: 1px;
+        }
+        #logo{
+        min-height: 130px;
+        width: 260px;
+        background-color: #B97A57;
+        /* Added */
+        display: inline-block; 
+        }
+        #navigation{
+        min-height: 130px;
+        width: 340px;
+        background-color: #FF7F27;
+        /* Added */
+        display: inline-block;
+        margin-left: 20px;
+        }
+        #main_content{
+        min-height: 250px;
+        width: 625px;
+        background-color: #880015;
+        /* Added */
+        margin-top: 20px;
+        position: relative;
+        }
+        #about{
+        min-height: 250px;
+        width: 540px;
+        background-color: #FFAEC9;
+        /* Added */
+        margin: 40px;
+        position: relative;
+        display: inline-block;
+        }
+        .sponsors{
+            min-height: 65px;
+            background-color: #FFFF88;
+            /* Added */
+            margin-top: 20px;
+            display: grid;
+        }
+}
+
+/* Laptop */
+@media screen and (min-width: 769px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        }
+        #logo{
+        min-height: 130px;
+        width: 260px;
+        background-color: #B97A57;
+        /* Added */
+        display: inline-block; 
+        }
+        #wrapper{
+        width: 940px;
+        background-color: #FFD9B7;
+        margin: 0px auto;
+        /* Added */
+        padding: 20px;
+        display: block;
+        }
+        #navigation{
+        min-height: 130px;
+        width: 650px;
+        background-color: #FF7F27;
+        /* Added */
+        display: inline-block;
+        margin-left: 20px;
+        }
+        #main_content{
+        min-height: 250px;
+        width: auto;
+        background-color: #880015;
+        /* Added */
+        margin-top: 20px;
+        position: relative;
+        }
+        #about{
+        min-height: 250px;
+        width: 650px;
+        background-color: #FFAEC9;
+        /* Added */
+        margin: 40px;
+        position: relative;
+        display: inline-block;
+        }
+        #advertisement{
+        min-height: 200px;
+        width: 155px;
+        background-color: #C8BFE7;
+        /* Added */
+        margin-top: 40px;
+        margin-left: 10px;
+        position: absolute;
+        display: inline-block;
+        }
+        .sponsors{
+            min-height: 65px;
+            width: 310px;
+            background-color: #FFFF88;
+            /* Added */
+            margin-top: 20px;
+            display: inline-block;
+        }
+}

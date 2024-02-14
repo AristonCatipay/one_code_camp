@@ -41,37 +41,55 @@
             </div>
         </nav>
     </header>
-    <div>
-        <h1>Contact Me</h1>
-        <form action="POST">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email"><br>
-            <label for="contact_no">Contact No</label>
-            <input type="number" name="contact_no" id="contact_no" placeholder="Enter your contact no."><br>
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" placeholder="Enter your username"><br>
-            <label for="password">Password</label>
-            <input type="text" name="password" id="password" placeholder="Enter your password"><br>
-            <label for="message">Message</label><br>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
-    
-            <label for="gender">Gender</label>
-            <select name="gender" id="gender">
-                <option value="male">Male</option>
-                <option value="female">female</option>
-            </select><br>
-    
-            <label for="married">Married</label>
-            <input type="radio" name="married" value="married">
-            <label for="single">Single</label>
-            <input type="radio" name="single" value="single"><br>
-    
-            <h4>Is a filipino?</h2>
-            <label for="yes">Yes</label>
-            <input type="checkbox" name="yes" id="yes" value="yes"> 
-            <label for="no">No</label>
-            <input type="checkbox" name="no" id="no" value="no"><br> 
-            <button type="submit">Submit</button>
+    <div class="container-lg">
+        <h1 class="text-success text-center fw-bold fs-3">Contact Me</h1>
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputUsername1" class="form-label">Username</label>
+                <input type="text" class="form-control" id="exampleInputUsername1" aria-describedby="usernameHelp">
+                <div id="usernameHelp" class="form-text">This will be available publicly.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+              <div id="passwordHelpBlock" class="form-text">
+                Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+              </div>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Message</label>
+              </div>
+            <label for="filipino-citizen" class="form-label">Filipino?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  No
+                </label>
+            </div>
+            <label for="civil-status" class="form-label">Civil Status</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">Single</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Married
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
     <footer>

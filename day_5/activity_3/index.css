@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#container {
+    position: relative;
+}
+
+#button {
+    position: fixed;
+    top: 0;
+    left: 0;
+}

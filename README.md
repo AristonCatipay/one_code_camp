@@ -1,4 +1,4 @@
-![OneCodeCamp](/readme_images/onecodecamp.PNG)
+![OneCodeCamp](/readme_images/onecodecamp.png)
 
 ### About
 This repository contains all my notes from my 1 month front-end coding bootcamp with OneCodeCamp. In this bootcamp I will be learning the MERN stack.

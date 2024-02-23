@@ -1,3 +1,11 @@
 /* body{
     background-color: black;
 } */
+
+/* document.title = 'Welcome to Document Object Model (DOM) Introduction';
+document.body.style.backgroundColor = 'yellow';
+console.log(document);
+
+const username = 'Ariston Catipay';
+var welcomeMessage = document.getElementById('welcome-message');
+welcomeMessage.textContent += username === '' ? 'Guest' : username; */

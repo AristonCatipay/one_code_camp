@@ -15,15 +15,16 @@
 // ID
 // const welcomeMessage = document.getElementById('welcome-message');
 // welcomeMessage.style.backgroundColor = 'yellow';
+// console.log(welcomeMessage);
 
 // CLASS
 
 // const cars = document.getElementsByClassName('cars');
 
-// cars[2].style.backgroundColor = 'yellow';
-// for (let car of cars){
-//     car.style.backgroundColor = 'yellow';
-// }
+// // cars[0].style.backgroundColor = 'yellow';
+// // for (let car of cars){
+// //     car.style.backgroundColor = 'yellow';
+// // }
 
 // Array.from(cars).forEach(car => {
 //     car.style.backgroundColor = 'yellow';
@@ -35,14 +36,14 @@
 
 // const hobbies = document.getElementsByTagName('li');
 
-// hobbies[0].style.backgroundColor = 'yellow';
-// for (let hobby of hobbies){
-//     hobby.style.backgroundColor = 'yellow';
-// }
+// // hobbies[0].style.backgroundColor = 'yellow';
+// // for (let hobby of hobbies){
+// //     hobby.style.backgroundColor = 'yellow';
+// // }
 
-// Array.from(hobbies).forEach(hobby => {
-//     hobby.style.backgroundColor = 'yellow';
-// });
+// // Array.from(hobbies).forEach(hobby => {
+// //     hobby.style.backgroundColor = 'yellow';
+// // });
 
 // console.log(hobbies);
 
@@ -55,7 +56,7 @@
 // const welcomeMessage = document.querySelector('#welcome-message');
 // console.log(welcomeMessage);
 // const car = document.querySelector('.cars');
-// car.style.backgroundColor = 'yellow';
+// // car.style.backgroundColor = 'yellow';
 
 // console.log(car);
 
@@ -63,16 +64,16 @@
 // ID
 // Class Name
 // Tag Name
-// const cars = document.querySelectorAll('.cars');
+const cars = document.querySelectorAll('.cars');
 
-// cars[0].style.backgroundColor = 'yellow';
+cars[0].style.backgroundColor = 'yellow';
 
 // for (let car of cars){
 //     car.style.backgroundColor = 'yellow';
 // }
 
-// cars.forEach(car => {
-//     car.style.backgroundColor = 'yellow';
-// })
+cars.forEach(car => {
+    car.style.backgroundColor = 'yellow';
+})
 
-// console.log(title);
+console.log(cars);

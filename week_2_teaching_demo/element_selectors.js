@@ -33,18 +33,18 @@
 
 // TAG
 
-// const movies = document.getElementsByTagName('li');
+// const hobbies = document.getElementsByTagName('li');
 
-// movies[0].style.backgroundColor = 'yellow';
-// for (let movie of movies){
-//     movie.style.backgroundColor = 'yellow';
+// hobbies[0].style.backgroundColor = 'yellow';
+// for (let hobby of hobbies){
+//     hobby.style.backgroundColor = 'yellow';
 // }
 
-// Array.from(movies).forEach(movie => {
-//     movie.style.backgroundColor = 'yellow';
+// Array.from(hobbies).forEach(hobby => {
+//     hobby.style.backgroundColor = 'yellow';
 // });
 
-// console.log(movies);
+// console.log(hobbies);
 
 
 // QUERY
@@ -54,11 +54,14 @@
 // const car = document.querySelector('.cars');
 // car.style.backgroundColor = 'yellow';
 
+// console.log(car);
+
 // QUERY ALL
 // Class Name
 // Tag Name
-// const cars = document.querySelectorAll('h3');
-// cars[1].style.backgroundColor = 'yellow'; 
+// const cars = document.querySelectorAll('.cars');
+
+// cars[0].style.backgroundColor = 'yellow';
 
 // for (let car of cars){
 //     car.style.backgroundColor = 'yellow';
@@ -68,4 +71,4 @@
 //     car.style.backgroundColor = 'yellow';
 // })
 
-// console.log(cars);
+// console.log(title);

@@ -48,15 +48,19 @@
 
 
 // QUERY
+// ID
 // Class Name
 // Tag Name
 
+// const welcomeMessage = document.querySelector('#welcome-message');
+// console.log(welcomeMessage);
 // const car = document.querySelector('.cars');
 // car.style.backgroundColor = 'yellow';
 
 // console.log(car);
 
 // QUERY ALL
+// ID
 // Class Name
 // Tag Name
 // const cars = document.querySelectorAll('.cars');

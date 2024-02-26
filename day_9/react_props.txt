@@ -1,0 +1,78 @@
+Props are short term for properties.
+
+A way to send information from one component to another.
+Works like parameters where in we pass arguments. 
+Strings, functions can be passed using props.
+
+Component in react app can have relationships with each other
+by importing a component to another component.
+
+
+1. Create the ParentComponent
+
+import React from "react";
+import ChildComponent from './PropsChildComponent';
+
+const ParentComponent = () => {
+    const message = 'Hello, child!';
+
+    return (
+        <ChildComponent greeting={message}/> 
+    )
+}
+
+export default ParentComponent;
+
+2. Create the ChildComponent then use props to retrive the value passed into it by the ParentComponent.
+
+import React from "react";
+
+const ChildComponent = (props) => {
+    return (
+        <div>
+            {props.greeting}
+        </div>
+    )
+}
+
+export default ChildComponent;
+
+3. Import the ParentComponent to the App.js
+
+import React from 'react';
+import ParentComponent from './components/PropsParentComponent';
+import './App.css';
+
+function App() {
+  return (
+    <ParentComponent/>
+  );
+}
+
+export default App;
+
+
+You can also pass multiple props.
+
+const ArrayIterationComponent = () => {
+    const feed = [
+        ['johndoe', 'This is awesome!', 'January 16, 2022', Image1],
+        ['marydoe', 'Dinner with the fam!', 'January 16, 2022', Image2], 
+        ['itsdoe', 'Just got home!', 'January 16, 2022', Image3]
+    ];
+
+    return (
+        <div>
+            {feed.map((post, index) => (
+                <PropsChildComponentArrayIterationActivity
+                    key={index}
+                    username={post[0]}
+                    message={post[1]}
+                    date={post[2]}
+                    image={post[3]}
+                />
+            ))}
+        </div>
+    );
+}
+

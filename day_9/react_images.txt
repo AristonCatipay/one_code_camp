@@ -1,0 +1,20 @@
+1. Create the assests/images folder in the src folder.
+src/assests/images/image1.jpg
+
+2. Import the file in your Component File.
+
+import Image from '../assests/images/image1.jpg;
+
+3. Call the Image variable in the Component.
+
+import React from 'react';
+
+function FunctionBasedComponent = () => {
+    return (
+        <div>
+            <img src={Image} alt=''/>
+        </div>
+    )
+}
+
+export default FunctionBasedComponent;

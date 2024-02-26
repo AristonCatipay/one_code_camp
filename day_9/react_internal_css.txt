@@ -1,0 +1,10 @@
+<style>
+    {`
+        img { 
+            height: 10px;
+        }
+    `}
+</style>
+
+
+It is better to add the css properties in the App.css file.

@@ -1,0 +1,51 @@
+Create the components folder in the src folder.
+src/components/ComponentFile.js
+
+components - independent and reusable piece of the interface.
+You reuse the variable used when you import the Component in the file.
+
+Types of components
+1. Class-based components (Used in older react project)
+2. Function-based components 
+
+Example of Class-based Component:
+1. Import the react library.
+2. Create the component.
+3. Import the component in the App.js.
+
+import React from 'react';
+
+class ClassName extends React.Component {
+    render() {
+        return (
+            <h1>Hello, React!</h1>
+        )
+    }
+}
+
+export default ClassName;
+
+-- Import the component in the App.js --
+
+import ClassName from './components/ClassName';
+
+const App = () => {
+    return (
+        <div>
+            <ClassName/>
+        </div>
+    )
+}
+
+Example of Function-based Component:
+import React from 'react';
+
+function FunctionBasedComponent(){
+    return <h1>Hello, React Component!</h1>
+}
+
+export default FunctionBasedComponent;
+
+
+
+

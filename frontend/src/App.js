@@ -1,10 +1,10 @@
 import React from 'react';
-import HookComponent from './components/HookComponent';
+import TodoListComponent from './components/TodoListComponent';
 import './App.css';
 
 function App() {
   return (
-    <HookComponent/>
+    <TodoListComponent/>
   );
 }
 

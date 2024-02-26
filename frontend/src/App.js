@@ -1,10 +1,10 @@
 import React from 'react';
-import ArrayIterationComponent from './components/PropsParentComponentArrayIterationActivity';
+import HookComponent from './components/HookComponent';
 import './App.css';
 
 function App() {
   return (
-    <ArrayIterationComponent/>
+    <HookComponent/>
   );
 }
 

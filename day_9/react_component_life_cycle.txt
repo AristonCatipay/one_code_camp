@@ -1,0 +1,16 @@
+Life cycle of React Components
+
+1. Initialization
+2. Mounting - all the side effects/logic
+3. Unmounting - after the side effects/logic
+4. Updation - original value will be edited
+
+Class-based Components
+1. Initialization - we will constructor.
+
+Function-based Components
+1. 
+
+Propt vs. State
+- State is accessible to a single component alone.
+- Propt is accessible to the child component.

@@ -1,12 +1,21 @@
+App.js file will handle the routing for the whole page.
+
+Components - it is possible that in a single page is a combination for multiple component.
+
+1. Create the src/pages folder.
+The components for the interface will be put here.
+
+No matter what page you are in you want the navigation bar and footer to be rendered in all of your pages.
+So for navigation(header) and footer they should be outside the Routes tag.
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Button, Alert} from 'react-bootstrap';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Header from './components/Header';
-import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import OrderComponent from './components/OrderComponent';
 import './App.css';
 
 function App() {
@@ -18,9 +27,7 @@ function App() {
           <Route path='/' element={<Home/>}></Route>
           <Route path='/about' element={<About/>}></Route>
           <Route path='/contact' element={<Contact/>}></Route>
-          <Route path='/order' element={<OrderComponent/>}></Route>
         </Routes>
-        <Footer></Footer>
       </Router>
     </div>
   );

@@ -1,15 +1,14 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import FetchUsingBuiltInFunction from './pages/FetchUsingBuiltInFunction';
-import FetchUsingAxios from './pages/FetchUsingAxios';
-import OrderComponent from './components/OrderComponent';
-import './App.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
+import Experience from "./pages/Experience";
+import Awards from "./pages/Awards";
 
 function App() {
   return (
@@ -17,12 +16,12 @@ function App() {
       <Router>
         <Header></Header>
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/about' element={<About/>}></Route>
-          <Route path='/contact' element={<Contact/>}></Route>
-          <Route path='/order' element={<OrderComponent/>}></Route>
-          <Route path='/functions' element={<FetchUsingBuiltInFunction/>}></Route>
-          <Route path='/axios' element={<FetchUsingAxios/>}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/portfolio" element={<Portfolio />}></Route>
+          <Route path="/experience" element={<Experience />}></Route>
+          <Route path="/awards" element={<Awards />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
         </Routes>
         <Footer></Footer>
       </Router>

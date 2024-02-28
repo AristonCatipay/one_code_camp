@@ -18,82 +18,31 @@ import Flutter from "../assets/images/programming_languages/flutter.svg";
 import MySQL from "../assets/images/programming_languages/mysql.svg";
 import Firebase from "../assets/images/programming_languages/firebase.svg";
 import Git from "../assets/images/programming_languages/git.svg";
+import GitHub from "../assets/images/programming_languages/github.svg";
+import Notion from "../assets/images/programming_languages/notion.svg";
 
-const About = () => {
+const Experience = () => {
   return (
     <>
       <Container className="my-5">
-        <h1 className="text-success fw-bold fs-5">Who am I?</h1>
         <h1 className="fw-bold fs-2">
-          Hello! I am{" "}
-          <span className="text-success fw-light">Ariston Catipay</span>
+          Yuson Group of Companies - Knowledge Base
         </h1>
         <p className="fw-light fs-4">
-          I am a dedicated, enthusiastic, and resilient software engineer from
-          the Philippines who is committed to lifelong learning and continuous
-          skill improvement. I excel in crafting user-centric applications and
-          websites.
+          Is a customer relationship management (CRM) system that stores crucial
+          data for managing all of the company's relationships and interactions
+          with current and potential customers. It stores not just all of the
+          Yuson Group of Companies' brands, but also the databases of each WSAP
+          department.
         </p>
       </Container>
       <Container className="my-5">
-        <h1 className="text-success fw-bold fs-5">What are my skills?</h1>
-        <h1 className="fw-bold fs-2">Technologies and Programming Languages</h1>
-        <p className="fw-light fs-4">
-          I've gained proficiency in a diverse set of programming languages and
-          technologies. My skills and experience allows me to transform concepts
-          into fully functional websites while prioritizing user-centric
-          applications. Here are some of the key technologies I'm skilled in.
-        </p>
-      </Container>
-      <Container>
+        <h1 className="text-success text-success fw-bold fs-5">
+          Technologies and Programming Languages
+        </h1>
         <Row>
           <Col>
-            <img src={Python} className="img-fluid" alt="Python" />
-          </Col>
-          <Col>
-            <img
-              src={Django}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="Django"
-            />
-          </Col>
-          <Col>
-            <img
-              src={Flask}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="Flask"
-            />
-          </Col>
-          <Col>
-            <img
-              src={FastAPI}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="FastAPI"
-            />
-          </Col>
-          <Col>
-            <img
-              src={PHP}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="PHP"
-            />
-          </Col>
-          <Col>
-            <img
-              src={HTML}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="HTML"
-            />
+            <img src={HTML} className="img-fluid" alt="HTML" />
           </Col>
           <Col>
             <img
@@ -113,51 +62,13 @@ const About = () => {
               alt="Javascript"
             />
           </Col>
-        </Row>
-        <Row>
           <Col>
             <img
-              src={Tailwind}
+              src={PHP}
               className="img-fluid"
               height="50"
               width="50"
-              alt="Tailwind"
-            />
-          </Col>
-          <Col>
-            <img
-              src={Flowbite}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="Flowbite"
-            />
-          </Col>
-          <Col>
-            <img
-              src={Bootstrap}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="Bootstrap"
-            />
-          </Col>
-          <Col>
-            <img
-              src={Dart}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="Dart"
-            />
-          </Col>
-          <Col>
-            <img
-              src={Flutter}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="Flutter"
+              alt="PHP"
             />
           </Col>
           <Col>
@@ -171,11 +82,84 @@ const About = () => {
           </Col>
           <Col>
             <img
-              src={Firebase}
+              src={Git}
               className="img-fluid"
               height="50"
               width="50"
-              alt="Firebase"
+              alt="Git"
+            />
+          </Col>
+          <Col>
+            <img
+              src={GitHub}
+              className="img-fluid"
+              height="50"
+              width="50"
+              alt="GitHub"
+            />
+          </Col>
+          <Col>
+            <img
+              src={Notion}
+              className="img-fluid"
+              height="50"
+              width="50"
+              alt="Notion"
+            />
+          </Col>
+        </Row>
+      </Container>
+      <Container className="my-5">
+        <h1 className="fw-bold fs-2">TJ Yuson's - Personal Portfolio</h1>
+        <p className="fw-light fs-4">
+          During the last week of my internship, TJ Yuson's personal portfolio
+          were assigned to the Web Development Team. Our CEO, Mr. TJ Yuson,
+          requested that we design and develop his own portfolio, which would
+          showcase all of his accomplishments, brands, and advocacies.
+        </p>
+      </Container>
+      <Container className="my-5">
+        <h1 className="text-success text-success fw-bold fs-5">
+          Technologies and Programming Languages
+        </h1>
+        <Col className="row justify-content-center">
+          <Col>
+            <img src={HTML} className="img-fluid" alt="HTML" />
+          </Col>
+          <Col>
+            <img
+              src={CSS}
+              className="img-fluid"
+              height="50"
+              width="50"
+              alt="CSS"
+            />
+          </Col>
+          <Col>
+            <img
+              src={Javascript}
+              className="img-fluid"
+              height="50"
+              width="50"
+              alt="Javascript"
+            />
+          </Col>
+          <Col>
+            <img
+              src={PHP}
+              className="img-fluid"
+              height="50"
+              width="50"
+              alt="PHP"
+            />
+          </Col>
+          <Col>
+            <img
+              src={MySQL}
+              className="img-fluid"
+              height="50"
+              width="50"
+              alt="MySQL"
             />
           </Col>
           <Col>
@@ -187,10 +171,28 @@ const About = () => {
               alt="Git"
             />
           </Col>
-        </Row>
+          <Col>
+            <img
+              src={GitHub}
+              className="img-fluid"
+              height="50"
+              width="50"
+              alt="GitHub"
+            />
+          </Col>
+          <Col>
+            <img
+              src={Notion}
+              className="img-fluid"
+              height="50"
+              width="50"
+              alt="Notion"
+            />
+          </Col>
+        </Col>
       </Container>
     </>
   );
 };
 
-export default About;
+export default Experience;

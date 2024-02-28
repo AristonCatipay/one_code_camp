@@ -19,81 +19,27 @@ import MySQL from "../assets/images/programming_languages/mysql.svg";
 import Firebase from "../assets/images/programming_languages/firebase.svg";
 import Git from "../assets/images/programming_languages/git.svg";
 
-const About = () => {
+const Portfolio = () => {
   return (
     <>
       <Container className="my-5">
-        <h1 className="text-success fw-bold fs-5">Who am I?</h1>
-        <h1 className="fw-bold fs-2">
-          Hello! I am{" "}
-          <span className="text-success fw-light">Ariston Catipay</span>
-        </h1>
+        <h1 className="fw-bold fs-2">Connectify - Social Media Website</h1>
         <p className="fw-light fs-4">
-          I am a dedicated, enthusiastic, and resilient software engineer from
-          the Philippines who is committed to lifelong learning and continuous
-          skill improvement. I excel in crafting user-centric applications and
-          websites.
+          Connectify is a lively Django-based social media application that
+          offers users a seamless platform to connect with friends and family.
+          With user-friendly features, our application makes it easy to
+          establish and maintain connections. Additionally, Connectify includes
+          a messaging functionality, enabling users to stay in touch and share
+          moments in real-time.
         </p>
       </Container>
       <Container className="my-5">
-        <h1 className="text-success fw-bold fs-5">What are my skills?</h1>
-        <h1 className="fw-bold fs-2">Technologies and Programming Languages</h1>
-        <p className="fw-light fs-4">
-          I've gained proficiency in a diverse set of programming languages and
-          technologies. My skills and experience allows me to transform concepts
-          into fully functional websites while prioritizing user-centric
-          applications. Here are some of the key technologies I'm skilled in.
-        </p>
-      </Container>
-      <Container>
+        <h1 className="text-success text-success fw-bold fs-5">
+          Technologies and Programming Languages
+        </h1>
         <Row>
           <Col>
-            <img src={Python} className="img-fluid" alt="Python" />
-          </Col>
-          <Col>
-            <img
-              src={Django}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="Django"
-            />
-          </Col>
-          <Col>
-            <img
-              src={Flask}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="Flask"
-            />
-          </Col>
-          <Col>
-            <img
-              src={FastAPI}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="FastAPI"
-            />
-          </Col>
-          <Col>
-            <img
-              src={PHP}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="PHP"
-            />
-          </Col>
-          <Col>
-            <img
-              src={HTML}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="HTML"
-            />
+            <img src={HTML} className="img-fluid" alt="HTML" />
           </Col>
           <Col>
             <img
@@ -106,22 +52,11 @@ const About = () => {
           </Col>
           <Col>
             <img
-              src={Javascript}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="Javascript"
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <img
               src={Tailwind}
               className="img-fluid"
               height="50"
               width="50"
-              alt="Tailwind"
+              alt="TailwindCSS"
             />
           </Col>
           <Col>
@@ -135,29 +70,20 @@ const About = () => {
           </Col>
           <Col>
             <img
-              src={Bootstrap}
+              src={Python}
               className="img-fluid"
               height="50"
               width="50"
-              alt="Bootstrap"
+              alt="Python"
             />
           </Col>
           <Col>
             <img
-              src={Dart}
+              src={Django}
               className="img-fluid"
               height="50"
               width="50"
-              alt="Dart"
-            />
-          </Col>
-          <Col>
-            <img
-              src={Flutter}
-              className="img-fluid"
-              height="50"
-              width="50"
-              alt="Flutter"
+              alt="Django"
             />
           </Col>
           <Col>
@@ -171,11 +97,87 @@ const About = () => {
           </Col>
           <Col>
             <img
-              src={Firebase}
+              src={Git}
               className="img-fluid"
               height="50"
               width="50"
-              alt="Firebase"
+              alt="Git"
+            />
+          </Col>
+        </Row>
+      </Container>
+      <Container className="my-5">
+        <h1 className="fw-bold fs-2">
+          HandMeDown - Online Marketplace Website
+        </h1>
+        <p className="fw-light fs-4">
+          HandMeDown is a Django-powered Online Marketplace where users can
+          effortlessly sell and discover preloved items. Our user-friendly
+          platform encourages direct communication through a messaging system,
+          allowing buyers and sellers to negotiate prices and finalize
+          transactions.
+        </p>
+      </Container>
+      <Container className="my-5">
+        <h1 className="text-success text-success fw-bold fs-5">
+          Technologies and Programming Languages
+        </h1>
+        <Row>
+          <Col>
+            <img src={HTML} className="img-fluid" alt="HTML" />
+          </Col>
+          <Col>
+            <img
+              src={CSS}
+              className="img-fluid"
+              height="50"
+              width="50"
+              alt="CSS"
+            />
+          </Col>
+          <Col>
+            <img
+              src={Tailwind}
+              className="img-fluid"
+              height="50"
+              width="50"
+              alt="TailwindCSS"
+            />
+          </Col>
+          <Col>
+            <img
+              src={Flowbite}
+              className="img-fluid"
+              height="50"
+              width="50"
+              alt="Flowbite"
+            />
+          </Col>
+          <Col>
+            <img
+              src={Python}
+              className="img-fluid"
+              height="50"
+              width="50"
+              alt="Python"
+            />
+          </Col>
+          <Col>
+            <img
+              src={Django}
+              className="img-fluid"
+              height="50"
+              width="50"
+              alt="Django"
+            />
+          </Col>
+          <Col>
+            <img
+              src={MySQL}
+              className="img-fluid"
+              height="50"
+              width="50"
+              alt="MySQL"
             />
           </Col>
           <Col>
@@ -193,4 +195,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Portfolio;

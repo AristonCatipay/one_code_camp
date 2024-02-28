@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import FetchUsingBuiltInFunction from './pages/FetchUsingBuiltInFunction';
+import FetchUsingAxios from './pages/FetchUsingAxios';
 import OrderComponent from './components/OrderComponent';
 import './App.css';
 
@@ -19,6 +21,8 @@ function App() {
           <Route path='/about' element={<About/>}></Route>
           <Route path='/contact' element={<Contact/>}></Route>
           <Route path='/order' element={<OrderComponent/>}></Route>
+          <Route path='/functions' element={<FetchUsingBuiltInFunction/>}></Route>
+          <Route path='/axios' element={<FetchUsingAxios/>}></Route>
         </Routes>
         <Footer></Footer>
       </Router>

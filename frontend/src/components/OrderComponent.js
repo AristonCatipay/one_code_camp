@@ -27,9 +27,9 @@ function OrderComponent() {
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevent the form from submitting.
     console.log('ORDER COMPLETE');
-    console.log('Customer Name: ', customerName == '' ? 'Guest' : customerName);
-    console.log('Delivery Address: ', deliveryAddress == '' ? 'Address is private' : deliveryAddress);
-    console.log('Contact Number: ', contactNumber == '' ? 'Contact is private' : contactNumber);
+    console.log('Customer Name: ', customerName === '' ? 'Guest' : customerName);
+    console.log('Delivery Address: ', deliveryAddress === '' ? 'Address is private' : deliveryAddress);
+    console.log('Contact Number: ', contactNumber === '' ? 'Contact is private' : contactNumber);
     console.log('ORDER DETAILS');
     if (product1Checked && product1Counter > 1) {
       console.log(`${product1} X ${product1Counter} = ${product1Price * product1Counter}`);
@@ -52,9 +52,9 @@ function OrderComponent() {
           <Modal.Title>Order Complete</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h6>Customer Name: { customerName == '' ? 'Guest' : customerName }</h6>
-          <h6>Delivery Address: { deliveryAddress == '' ? 'Address is private' : deliveryAddress }</h6>
-          <h6>Contact Number: { contactNumber == '' ? 'Contact is private' : contactNumber }</h6>
+          <h6>Customer Name: { customerName === '' ? 'Guest' : customerName }</h6>
+          <h6>Delivery Address: { deliveryAddress === '' ? 'Address is private' : deliveryAddress }</h6>
+          <h6>Contact Number: { contactNumber === '' ? 'Contact is private' : contactNumber }</h6>
           {product1Checked && product1Counter > 0 && (
             <h6>{product1} X {product1Counter} = {product1Price * product1Counter}</h6>
           )}

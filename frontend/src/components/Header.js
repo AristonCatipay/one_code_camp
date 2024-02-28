@@ -20,6 +20,8 @@ const Header = () => {
                     <Nav.Link as={Link} to='/about'>About</Nav.Link>
                     <Nav.Link as={Link} to='/contact'>Contact</Nav.Link>
                     <Nav.Link as={Link} to='/order'>Order</Nav.Link>
+                    <Nav.Link as={Link} to='/functions'>Fetch using Built-In Functions</Nav.Link>
+                    <Nav.Link as={Link} to='/axios'>Fetch using Axios</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             <Form className="d-flex">

@@ -24,8 +24,8 @@ const Contact = () => {
             <Modal.Title>Message Content</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            <h6>Email: {email == '' ? 'Guest' : email }</h6>
-            <span>Message: <br/> { message == '' ? 'Address is private' : message }</span>
+            <h6>Email: {email === '' ? 'Guest' : email }</h6>
+            <span>Message: <br/> { message === '' ? 'Address is private' : message }</span>
             </Modal.Body>
             <Modal.Footer>
             <Button variant="warning" onClick={handleClose}>

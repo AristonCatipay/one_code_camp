@@ -1,6 +1,5 @@
 const createTodo = () => {
-  if (todo.trim()) {
-    setTodoList([...todoList, todo]);
-    setTodo("");
-  }
+  const trimmedTodo = todo.trim();
+  setTodoList([...todoList, trimmedTodo]);
+  setTodo("");
 };

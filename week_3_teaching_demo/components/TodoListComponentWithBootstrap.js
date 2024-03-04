@@ -13,20 +13,18 @@ const TodoListComponent = () => {
   const [targetIndex, setTargetIndex] = useState(null);
 
   const createTodo = () => {
-    if (todo.trim()) {
-      setTodoList([...todoList, todo]);
-      setTodo("");
-    }
+    const trimmedTodo = todo.trim();
+    setTodoList([...todoList, trimmedTodo]);
+    setTodo("");
   };
 
   const updateTodo = (index) => {
-    if (updatedTodo.trim()) {
-      const updatedTodoList = [...todoList];
-      updatedTodoList[index] = updatedTodo;
-      setTodoList(updatedTodoList);
-      setUpdatedTodo("");
-      setTargetIndex(null);
-    }
+    const trimmedUpdatedTodo = updatedTodo.trim();
+    const updatedTodoList = [...todoList];
+    updatedTodoList[index] = trimmedUpdatedTodo;
+    setTodoList(updatedTodoList);
+    setUpdatedTodo("");
+    setTargetIndex(null);
   };
 
   const deleteTodo = (index) => {
@@ -58,7 +56,7 @@ const TodoListComponent = () => {
         <Table striped bordered hover variant="dark">
           <thead>
             <tr>
-              <th>ID</th>
+              <th>Index</th>
               <th>Todo</th>
               <th>Edit</th>
               <th>Delete</th>

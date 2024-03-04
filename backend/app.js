@@ -20,9 +20,7 @@ const app = express();
 const mongoose = require("mongoose");
 const port = 3000;
 mongoose
-  .connect(
-    "mongodb+srv://aristoncatipay123:1MPiUM4dGgETJDWh@cluster0.vamlj4g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-  )
+  .connect("")
   .then(() => {
     app.listen(port, () => {
       console.log(`Listening port ${port} and connected to MongoDB`);

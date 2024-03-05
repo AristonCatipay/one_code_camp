@@ -56,4 +56,19 @@ const updatePost = async (request, response) => {
   }
 };
 
-module.exports = { getPosts, createPost, updatePost };
+// Delete Post
+const deletePost = async (request, response) => {
+  const postId = request.params.postId;
+
+  try {
+    const deletedPost = await Post.findByIdAndDelete(postId);
+    if (!deletedPost) {
+      return response.status(404).json({ message: "Post not found" });
+    }
+    response.status(200).json({ message: "Post deleted successfully" });
+  } catch (error) {
+    response.status(500).json({ error: error.message });
+  }
+};
+
+module.exports = { getPosts, createPost, updatePost, deletePost };

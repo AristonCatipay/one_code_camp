@@ -28,4 +28,32 @@ const createPost = async (request, response) => {
   }
 };
 
-module.exports = { getPosts, createPost };
+// Update Post
+const updatePost = async (request, response) => {
+  const { title, author, description, likes, comment } = request.body;
+  const postId = request.params.postId;
+
+  try {
+    const updatedPost = await Post.findByIdAndUpdate(
+      postId,
+      {
+        title,
+        author,
+        description,
+        likes,
+        comment,
+      },
+      { new: true } // Return the updated document
+    );
+
+    if (!updatedPost) {
+      return response.status(404).json({ error: "Post not found" });
+    }
+
+    response.status(200).json(updatedPost);
+  } catch (error) {
+    response.status(400).json({ error: error.message });
+  }
+};
+
+module.exports = { getPosts, createPost, updatePost };

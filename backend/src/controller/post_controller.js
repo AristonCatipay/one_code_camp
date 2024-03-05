@@ -10,4 +10,22 @@ const getPosts = async (request, response) => {
   }
 };
 
-module.exports = getPosts;
+// Create Post
+const createPost = async (request, response) => {
+  const { title, author, description, likes, comment } = request.body;
+
+  try {
+    const post = await Post.create({
+      title,
+      author,
+      description,
+      likes,
+      comment,
+    });
+    response.status(200).json(post);
+  } catch (error) {
+    response.status(400).json({ error: error.message });
+  }
+};
+
+module.exports = { getPosts, createPost };

@@ -1,0 +1,52 @@
+.custom-gradient-python-django {
+  background-image: linear-gradient(to right, #7062ee, #1ebb86);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.custom-gradient-react-javascript-node {
+  background-image: linear-gradient(to right, #61dafb, #f0db4f, #68a063);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.custom-gradient-react-node {
+  background-image: linear-gradient(to right, #61dafb, #68a063);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.custom-gradient-gold {
+  background-image: linear-gradient(to right, #ffd700, #ffa500);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.custom-gradient-pink {
+  background-image: linear-gradient(to right, #8b5cf6, #ff6bbd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.custom-gradient-blue-to-lime-green {
+  background-image: linear-gradient(to right, #4fd1c5, #a1e9c5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.custom-image {
+  background-image: linear-gradient(to top right, #10b981, #0d6efd);
+  padding: 0.5rem;
+  max-width: 400px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}

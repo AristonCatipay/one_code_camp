@@ -1,0 +1,23 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables file
+.env
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Log files
+logs/
+*.log
+
+# Dependency lock files
+package-lock.json
+yarn.lock

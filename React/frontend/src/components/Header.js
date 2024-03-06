@@ -42,8 +42,8 @@ const Header = () => {
               <Nav.Link as={Link} to="/contact">
                 Contact
               </Nav.Link>
-              <Nav.Link as={Link} to="/blog/posts">
-                Blog Posts
+              <Nav.Link as={Link} to="/blog/">
+                Blog
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

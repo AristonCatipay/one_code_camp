@@ -23,7 +23,7 @@ function App() {
           <Route path="/experience" element={<Experience />}></Route>
           <Route path="/awards" element={<Awards />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/blog/posts" element={<BlogPost />}></Route>
+          <Route path="/blog/" element={<BlogPost />}></Route>
         </Routes>
         <Footer></Footer>
       </Router>

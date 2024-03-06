@@ -1,4 +1,3 @@
-// CreateBlog.js
 import React, { useState } from "react";
 import Axios from "axios";
 import { Container, Form, Button, Modal, Alert } from "react-bootstrap";
@@ -49,7 +48,7 @@ const CreateBlog = ({ setPosts }) => {
   return (
     <Container className="my-5">
       <Button variant="primary" onClick={toggleModal}>
-        Create New Post
+        Create Blog
       </Button>
 
       <Modal show={showModal} onHide={toggleModal}>
@@ -99,7 +98,7 @@ const CreateBlog = ({ setPosts }) => {
                 onChange={(event) => setDescription(event.target.value)}
               />
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button variant="success" type="submit">
               Submit
             </Button>
           </Form>

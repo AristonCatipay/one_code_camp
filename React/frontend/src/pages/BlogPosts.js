@@ -1,9 +1,8 @@
-// App.js
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import { Container, Row, Col } from "react-bootstrap";
 import BlogPostCard from "../components/BlogPostCard";
-import CreateBlog from "./CreateBlog";
+import CreateBlog from "../components/CreateBlog";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);

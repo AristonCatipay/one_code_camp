@@ -80,10 +80,10 @@ const BlogPostCard = ({ post, setPosts }) => {
               </Form.Group>
               <Button
                 className="mx-2 my-4"
-                variant="primary"
+                variant="success"
                 onClick={handleSave}
               >
-                <i className="bi bi-pencil-square mx-1"></i>
+                <i class="bi bi-floppy2-fill mx-1"></i>
                 Save
               </Button>
               <Button

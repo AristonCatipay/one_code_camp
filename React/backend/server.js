@@ -11,6 +11,7 @@ app.use(cors());
 
 // Routes
 app.use("/api/posts", require("./src/view/post_view"));
+app.use("/api/users", require("./src/view/user_view"));
 
 // Database Connection
 mongoose

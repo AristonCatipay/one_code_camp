@@ -1,10 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import Icon from "../assets/images/icon.svg";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import Logout from "../components/Logout";
 
 const Header = () => {
   return (
@@ -48,6 +47,12 @@ const Header = () => {
               <Nav.Link as={Link} to="/login/">
                 Login
               </Nav.Link>
+              <Nav.Link as={Link} to="/register/">
+                Register
+              </Nav.Link>
+            </Nav>
+            <Nav className="justify-content-end">
+              <Logout>Submit</Logout>
             </Nav>
           </Navbar.Collapse>
         </Container>

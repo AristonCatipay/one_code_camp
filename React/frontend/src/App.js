@@ -11,6 +11,7 @@ import Experience from "./pages/Experience";
 import Awards from "./pages/Awards";
 import BlogPost from "./pages/BlogPosts";
 import Login from "./pages/LoginPage";
+import Register from "./pages/RegisterPage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/blog/" element={<BlogPost />}></Route>
           <Route path="/login/" element={<Login />}></Route>
+          <Route path="/register/" element={<Register />}></Route>
         </Routes>
         <Footer></Footer>
       </Router>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Axios from "axios";
 import { Container, Form, Button, Alert } from "react-bootstrap";
 
-const Login = () => {
+const Register = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
@@ -13,7 +13,7 @@ const Login = () => {
 
     try {
       const response = await Axios.post(
-        "http://localhost:4000/api/users/login",
+        "http://localhost:4000/api/users/register",
         {
           username,
           password,
@@ -22,15 +22,15 @@ const Login = () => {
 
       const { token } = response.data;
       localStorage.setItem("token", token);
-      setSuccessMessage("Login Successful!");
+      setSuccessMessage("Registration Successful!");
     } catch (error) {
-      handleLoginError(error);
+      handleRegistrationError(error);
     }
   };
 
-  const handleLoginError = (error) => {
-    setErrorMessage("Login Failed: " + error.response.data.error);
-    console.error("Login Error:", error.message);
+  const handleRegistrationError = (error) => {
+    setErrorMessage("Registration Failed: " + error.response.data.error);
+    console.error("Registration Error:", error.message);
   };
 
   return (
@@ -66,7 +66,7 @@ const Login = () => {
             />
           </Form.Group>
           <Button variant="success" type="submit">
-            Login
+            Register
           </Button>
         </Form>
       </Container>
@@ -74,4 +74,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;

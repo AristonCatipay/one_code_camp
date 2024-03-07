@@ -8,9 +8,14 @@ const Blog = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
+    const token = localStorage.getItem("token");
     const fetchPosts = async () => {
       try {
-        const { data } = await Axios.get("http://localhost:4000/api/posts");
+        const { data } = await Axios.get("http://localhost:4000/api/posts", {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
         setPosts(data);
       } catch (error) {
         console.error("Error fetching posts:", error.message);

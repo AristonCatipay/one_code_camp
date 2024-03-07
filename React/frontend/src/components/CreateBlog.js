@@ -14,11 +14,20 @@ const CreateBlog = ({ setPosts }) => {
     event.preventDefault();
 
     try {
-      const { data } = await Axios.post("http://localhost:4000/api/posts", {
-        title,
-        author,
-        description,
-      });
+      const token = localStorage.getItem("token");
+      const { data } = await Axios.post(
+        "http://localhost:4000/api/posts",
+        {
+          title,
+          author,
+          description,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       console.log("Response data:", data);
 
       clearFormFields();

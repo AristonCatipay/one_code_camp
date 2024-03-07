@@ -1,12 +1,12 @@
 const jwt = require("jsonwebtoken");
 
 const authMiddleware = async (request, response, next) => {
-  const token = request.header("Authorization.");
+  const token = request.header("Authorization");
 
   if (!token) return response.status(403).json({ error: "Access denied." });
   try {
     const decoded = jwt.verify(token.substring(7), process.env.JWT_SECRET);
-    request.user = { userId: decoded.id };
+    request.user = { userId: decoded.userId };
     next();
   } catch (error) {
     response.status(403).json({ error: "Access denied." });

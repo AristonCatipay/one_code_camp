@@ -10,6 +10,7 @@ import Portfolio from "./pages/Portfolio";
 import Experience from "./pages/Experience";
 import Awards from "./pages/Awards";
 import BlogPost from "./pages/BlogPosts";
+import Login from "./pages/LoginPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/awards" element={<Awards />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/blog/" element={<BlogPost />}></Route>
+          <Route path="/login/" element={<Login />}></Route>
         </Routes>
         <Footer></Footer>
       </Router>

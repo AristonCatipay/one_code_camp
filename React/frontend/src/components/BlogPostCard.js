@@ -17,8 +17,14 @@ const BlogPostCard = ({ post, setPosts }) => {
   const handleDelete = async (event) => {
     event.preventDefault();
     try {
+      const token = localStorage.getItem("token");
       const response = await Axios.delete(
-        `http://localhost:4000/api/posts/${_id}`
+        `http://localhost:4000/api/posts/${_id}`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
       );
       console.log(response.data);
       setPosts((prevPosts) => prevPosts.filter((post) => post._id !== _id));
@@ -35,11 +41,20 @@ const BlogPostCard = ({ post, setPosts }) => {
   const handleSave = async (event) => {
     event.preventDefault();
     try {
-      await Axios.put(`http://localhost:4000/api/posts/${_id}`, {
-        title,
-        author,
-        description,
-      });
+      const token = localStorage.getItem("token");
+      await Axios.put(
+        `http://localhost:4000/api/posts/${_id}`,
+        {
+          title,
+          author,
+          description,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       console.log("Post updated successfully");
       setIsEditing(false);
     } catch (error) {
@@ -83,7 +98,7 @@ const BlogPostCard = ({ post, setPosts }) => {
                 variant="success"
                 onClick={handleSave}
               >
-                <i class="bi bi-floppy2-fill mx-1"></i>
+                <i className="bi bi-floppy2-fill mx-1"></i>
                 Save
               </Button>
               <Button
@@ -91,7 +106,7 @@ const BlogPostCard = ({ post, setPosts }) => {
                 variant="danger"
                 onClick={() => setIsEditing(false)}
               >
-                <i class="bi bi-x-lg mx-1"></i>Close
+                <i className="bi bi-x-lg mx-1"></i>Close
               </Button>
             </Form>
           ) : (

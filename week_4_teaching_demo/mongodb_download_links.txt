@@ -1,0 +1,24 @@
+MongoDB Community Server Download:
+https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-7.0.6-signed.msi
+
+1. Open the file.
+2. Tick the `I accept the terms and License Agreement` then click the `Next` button.
+3. Click the `Complete` button. Click the `Install MongoD as a Service` then click the `Next` button.
+4. Tick the `Install MongoDB Compass` then click the `Next` button.
+5. Click the `Finish` button.
+
+Give this a `thumbsup` if you successfully install MongoDB and MongoDB Compass.
+Give this a `thumbsdown` if you encounter any errors and need assistance.
+
+[
+    {
+        name: "Spongebob",
+        age : "18",
+        address : "Pineapple"
+    }, 
+    {
+        name: "Patrick",
+        age : "20",
+        address : "Under a rock"
+    }
+]

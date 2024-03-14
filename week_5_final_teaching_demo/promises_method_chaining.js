@@ -1,9 +1,5 @@
 /*
-    Async/Await: 
-        Simplifies asynchronous programming, making it look synchronous and readable.
-
-        Async - makes a function return a promise.
-        Await - makes an async function wait for a promise.
+    Method chaining: Sequentially calling multiple methods on a promise object.
 */
 
 function sortLaundry() {
@@ -71,13 +67,10 @@ function startMachine() {
   });
 }
 
-async function executeTasks() {
-  try {
-    const sortLaundryResult = await sortLaundry();
-    console.log(sortLaundryResult);
-  } catch (error) {
+sortLaundry()
+  .then((value) => {
+    console.log(value);
+  })
+  .catch((error) => {
     console.error(error);
-  }
-}
-
-executeTasks();
+  });

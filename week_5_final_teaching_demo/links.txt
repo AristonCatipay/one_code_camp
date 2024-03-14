@@ -1,0 +1,7 @@
+Synchronous: https://codeshare.io/deevwZ
+Asynchronous: https://codeshare.io/beeAvb
+Callback function: https://codeshare.io/0bb61n
+Callback hell: https://codeshare.io/7JJnqD
+Promises: https://codeshare.io/ONNMLx
+Promises Method Chaining: https://codeshare.io/qAAggq
+Async/ Await: https://codeshare.io/deemmz

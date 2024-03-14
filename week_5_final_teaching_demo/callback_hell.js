@@ -4,7 +4,9 @@
         leading to code that is hard to read and maintain.
 */
 
-sortLaundry(() => {});
+sortLaundry(() => {
+  loadClothes(() => {});
+});
 
 function sortLaundry(callback) {
   setTimeout(() => {

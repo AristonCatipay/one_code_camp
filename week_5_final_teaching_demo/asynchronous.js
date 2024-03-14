@@ -1,4 +1,9 @@
 /*
+    Asynchronous JavaScript:
+        Utilizes non-blocking I/O operations and event-driven architecture to handle asynchronous tasks efficiently.
+        Asynchronous operations are still executed within the same thread, but they don't block the execution of other tasks.
+        Instead, they are scheduled to run in the background, and their results are handled asynchronously once they are available.
+        
     Asynchronous Programming:
         Enables concurrency by allowing tasks to run concurrently rather than sequentially.
         Is essential for tasks that involve I/O operations:

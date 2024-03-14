@@ -4,14 +4,11 @@
         Used to handle asynchronous operations.
 */
 
-sortLaundry(() => {
-  loadClothes();
-});
+sortLaundry();
 
-function sortLaundry(callback) {
+function sortLaundry() {
   setTimeout(() => {
     console.log("Sort laundry by color and fabric.");
-    callback();
   }, 2000);
 }
 

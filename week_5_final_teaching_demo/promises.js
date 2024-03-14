@@ -13,7 +13,7 @@
 function sortLaundry() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const taskSuccessful = true;
+      const taskSuccessful = false;
       if (taskSuccessful) {
         resolve("Sort laundry by color and fabric.");
       } else {

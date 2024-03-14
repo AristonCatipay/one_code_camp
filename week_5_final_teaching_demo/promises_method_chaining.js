@@ -31,7 +31,7 @@ function loadClothes() {
 function addChemicals() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const taskSuccessful = true;
+      const taskSuccessful = false;
       if (taskSuccessful) {
         resolve("Add detergent and fabric softener.");
       } else {
@@ -70,6 +70,23 @@ function startMachine() {
 sortLaundry()
   .then((value) => {
     console.log(value);
+    return loadClothes();
+  })
+  .then((value) => {
+    console.log(value);
+    return addChemicals();
+  })
+  .then((value) => {
+    console.log(value);
+    return setSettings();
+  })
+  .then((value) => {
+    console.log(value);
+    return startMachine();
+  })
+  .then((value) => {
+    console.log(value);
+    console.log("All functions are executed.");
   })
   .catch((error) => {
     console.error(error);

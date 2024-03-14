@@ -5,7 +5,15 @@
 */
 
 sortLaundry(() => {
-  loadClothes(() => {});
+  loadClothes(() => {
+    addChemicals(() => {
+      setSettings(() => {
+        startMachine(() => {
+          console.log("All function execution finished.");
+        });
+      });
+    });
+  });
 });
 
 function sortLaundry(callback) {

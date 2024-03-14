@@ -35,7 +35,7 @@ function loadClothes() {
 function addChemicals() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const taskSuccessful = true;
+      const taskSuccessful = false;
       if (taskSuccessful) {
         resolve("Add detergent and fabric softener.");
       } else {
@@ -75,6 +75,18 @@ async function executeTasks() {
   try {
     const sortLaundryResult = await sortLaundry();
     console.log(sortLaundryResult);
+
+    const loadClothesResult = await loadClothes();
+    console.log(loadClothesResult);
+
+    const addChemicalsResult = await addChemicals();
+    console.log(addChemicalsResult);
+
+    const setSettingsResult = await setSettings();
+    console.log(setSettingsResult);
+
+    const startMachineResult = await startMachine();
+    console.log(startMachineResult);
   } catch (error) {
     console.error(error);
   }
